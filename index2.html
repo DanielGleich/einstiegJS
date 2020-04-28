@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript-Test </title>
+    <style>
+      table, td {
+                  border:2px solid blue; 
+                  padding:1em;
+                  border-collapse: collapse ;
+                }
+      h1        {
+                  border:2px dashed black;
+                  border-radius:10px;
+                  width:350px;
+                  text-align:center;
+                  background-color:linen;
+                  padding:1em;
+                }
+      h1:hover  {
+                  box-shadow:2px 2px 5px grey;
+                }
+                
+    </style>
+    <script>
+      function rechnung1()
+      {
+        var a = 7;
+        var b = 5;
+        var element = document.getElementById( "result" );
+          element.innerHTML = "7 + 5 = "+(a+b); // Klick-Funktion 1
+      }
+      
+      function rechnung2()
+      {
+        var a = 7;
+        var b = 5;
+        var element = document.getElementById( "result" );
+          element.innerHTML = "7 - 5 = "+(a-b); // Klick-Funktion 1
+      }
+    </script>
+  </head>
+  <body>
+    <h1 id="rechnung1" onClick="rechnung1()">Rechnung 1 </h1>
+    <h1 id="rechnung2" onClick="rechnung2()">Rechnung 2</h1>
+    <p id="result">
+      Hier soll das Ergebnis hin!
+    </p>
+
+  </body>
+</html>
+
